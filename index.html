@@ -1,0 +1,505 @@
+<! DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+#topPic
+    {
+       
+        height: 150px;
+        width: 100%;
+        background: grey; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, dimgrey , black); 
+    }
+    
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+background-image: url(black.jpg);
+   background-color:black;/*29292B;*/
+    background-position: 0px 175px;
+}
+
+.topnav {
+  overflow: hidden;
+background: linear-gradient(to right, dimgrey , black); 
+    
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #15c4be;/*#4CAF50;*/
+  color: black;
+}
+    
+    
+.introPic
+    {
+        height: 300px;
+        width: 220px;
+        border-radius: 80px;
+        
+          opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+    
+}
+    .container
+    {
+        position:absolute;
+        width: 10%;
+    }
+    
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  color: lightcyan;
+  font-size: 14px;
+    margin-left: 45px;
+  padding: 10px 30px;
+border-radius: 8px;
+}
+    
+    
+    
+.mainIntro{
+    
+    
+    width: 500px;
+   /* border: 25px solid yellow; */
+    padding: 0px;
+    margin: 25px;
+    
+    padding-left: 30%; 
+    color: aquamarine;
+    font-size: 17px;
+    font: monospace-regular;
+     background-clip: content-box;
+    }
+    
+
+    .button
+    {
+        background: #18baa9;
+        padding: 1em 2em;
+        color: black;
+        border: 0; 
+        width: 300px;
+        height: 40px;
+        margin: 8px;
+        border-radius: 10px;
+    }
+    
+.button:hover
+    {
+        background: #333;
+        color: antiquewhite;
+    }
+    .modal
+    {
+        display: none; 
+        /* dark area around the text*/
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0,.25);
+    }    
+    
+    .modalContent
+    {
+        background-color: #f4f4f4;
+        margin: 20% auto;
+        margin-left: 57%;
+        padding: 20px;
+        width:30%;
+        box-shadow: 0 5px 0 rgba(0,0,0,0.8),0 7px 20px 0
+            rgba(0,0,0,0.8);
+    }
+        
+    .devStyle
+    {
+        background-color: black;
+        font-family: monospace;
+        color: antiquewhite;
+        font-size: 13px;
+    }
+    
+    .analystStyle
+    {
+        margin-top: 15%;
+        background-color:black;
+        color: #99DAE8;
+        width: 38%;
+        
+    }
+    .travStyle
+    {
+        margin-top: 12%;
+        background: green;
+        color: beige;
+        width: 38%;
+    }
+    
+    .closeBtn
+    {
+        color: #ccc;
+        float: right;
+        font-size: 30px;
+        
+    }
+    .closeBtn:hover,.closeBtn:focus
+    {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;  
+    } 
+    
+    .closeDev
+    {
+        color: #ccc;
+        float: right;
+        font-size: 30px;
+    }
+    .closeDev:hover,.closeDev:focus
+    {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+    .closeAdv
+    {
+        color: #ccc;
+        float: right;
+        font-size: 30px;
+    }
+    .closeAdv:hover,.closeAdv:focus
+    {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+        .closeAna
+    {
+        color: #ccc;
+        float: right;
+        font-size: 30px;
+    }
+    .closeAna:hover,.closeAna:focus
+    {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+    
+    
+/* 
+ok, so lets make a website, my students did it, now i can too
+personal CV/ code portfolio
+caleb seifert
+*/
+</style>
+    <title>caleb Seifert's Home page!</title>
+</head>
+
+<body>
+
+    <div id="topPic" >
+     <img src="titleScreen.png" alt="some code, no picture though X(" height="150" width="60%">
+    </div>
+    
+    <!-- /var/usr/www/html/ for server !-->
+    
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="Downloads_page.html">Documents</a>
+  <a href="contact_page.html">LinkdIn, Facebook, Etc.</a>
+    <div style = "float: right">
+    <a href="indexChinese.html"> English/中文</a>
+    </div>
+</div>
+
+
+<div style="padding-left: 10%">
+    <br>
+    <div class = "container">
+    <img src="introPic.jpg" alt="its me!" class = "introPic" >
+        <div class="middle">
+            <div class="text">
+            Frozen in Harbin!
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="mainIntro" >
+    <p class="mainText">
+    Hello!
+    <br>
+    My name is Caleb Seifert, I am a
+    <br>
+    <button id="teachModB" class="button">Teacher</button>     
+    <br>
+    <button id="devModB" class="button">Developer</button> 
+    <br>
+    <button id="analModB" class="button">Analyst</button> 
+    <br>
+    <button id="adventModB" class="button">Adventurer</button> 
+     
+        
+        
+        
+        
+        
+        <!--
+    I have many different interests ranging from server side development .
+    <br>
+    Main development Languages:
+        Java, Arduino, HTML, C, C++, C#, Python, SQL
+    <br>
+                                         see resume for complete list!
+    <br>
+    <br>
+    Enough about coding!<br><br>
+    I have many interests including travelling, music, food, physics, consciousness, and large data processing
+    <br>
+    I've also taught a few Robotics classes, which included 3D Design and fabrication!
+    
+    !-->
+</p>
+</div>
+
+<div id="teachMod" class="modal">
+        <div class="modalContent">
+            <span class="closeBtn">&times;</span>
+           
+            <img src="blurbPics/tech1.png" alt ="a picture"
+                 style="width: 75px; height: 75px; float: left; padding-top: 20%;">
+            <p style="padding-left: 25%;">
+                I have taught at the St. Paul American Highschool<br>
+                in Shanghai China for two years.
+             <br>
+                The courses I taught were all related to the Science and Technologies
+                <br>
+                I have learned from my students almost as much as I have taught them.
+                <br>
+                Seeing my students create code and implement data structures has been
+                <br>
+                one of my life's greatest achievements.
+            </p>
+        </div>
+    </div>
+    
+<div id="devMod" class="modal" >
+        <div class="modalContent devStyle">
+            <span class="closeDev">&times;</span>
+            
+            <img src="blurbPics/Electronic%20Circuit%20Green%20Black%20Android%20Wallpaper.jpg" alt="cool techy picture i found"
+                 style="width: 25%;height: 35%; float: left; padding-right: 5px;">
+            <p> 
+            I Majored in Applied Physics and Minored in Computer Science.
+            <br>
+            But it was not until I started working at SouthWest Research Institute
+            <br> 
+            that I really learned how to compute.
+            <br>
+            I went on to teach multiple Highschool courses in Computer Science and Robotics.
+            <br>
+            My development as a developer has come from real world experience,
+            <br>
+            trial and error, help from some of the smartest people I know, classes,
+            <br>
+            and an unmentionable amount of coffee.
+            </p>
+        </div>
+    </div>
+<div id="analMod" class="modal">
+        <div class="modalContent analystStyle">
+            <span class="closeAna">&times;</span>
+            <p> 
+            I started working at SouthWest Research Institute during my freshman year of college.
+            <br>
+            this is where my training as an Analyst began.
+            <br>
+            I learned while working with the 
+                <span title="Lunar Reconaissance Orbiter, Lyman Alpha Mapping Project" style="color: aqua;">LRO/LAMP</span> team.
+            <br>
+            My primary directive here was to take care LAMP's Imaging Spectrometer instrument calibration.
+            <br>
+            I also had the opportunity to develop the server side code for
+            <br>
+            a special data feature that had unknown causes.
+            <br>
+            Spoiler alert:
+            <br>
+            it came down to black body radiation not being perfect at
+            <br>
+            some geometries with the earth and sun.
+            </p>
+            <img src="blurbPics/gear__sickle__and_pen_by_bullmoose1912-d62g1ts.png"
+                 alt ="some design i made awhile back"
+                 style="width: 100px;height: 100px;">
+        </div>
+    </div>
+    <div id="advMod" class="modal">
+        <div class="modalContent travStyle">
+            <span class="closeAdv">&times;</span>
+            <img src="blurbPics/PixelArt.png" alt="something adventerous.png"
+                 style="width: 300px; height: 100px; ">
+            <p>
+            Change is the only constant.
+            <br>
+            This is something that I believe, and it applies to all aspects of my life.
+            <br>
+            I believe that change is something that directly applies to travelling.
+            <br>
+            Cultures across the world have inspired me to see things both differently
+            <br>
+            and innovatively.
+            <br>
+            I have lived in china for the past two years <span title="as of making this website" style="color:blanchedalmond;">Two years</span>
+            <br>
+            and it has been the greatest experience of my life so far.
+            <br>
+            from different foods, different lifestyles, social normatives, and cultures
+            <br>
+                in general, I have found that we are all uniquely different.
+            <br>
+            I think we should celebrate these differences, as well as our 
+            <br>
+            commonalities, which i find usually we have more than we think.
+            <br>
+            What are you waiting for? The world is right outside the door!
+            <br>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+
+    var modal = document.getElementById('teachMod');
+    var devMod = document.getElementById('devMod');
+    var anlMod = document.getElementById('analMod');
+    var advMod = document.getElementById('advMod');
+        
+    var modalBtn = document.getElementById('teachModB');
+    var devModBtn = document.getElementById('devModB');
+    var anlBtn = document.getElementById('analModB');
+    var advBtn = document.getElementById('adventModB');
+        
+    var closeBtn = document.getElementsByClassName('closeBtn')[0];
+    var closeDevBtn = document.getElementsByClassName('closeDev')[0];
+    var closeAnlBtn = document.getElementsByClassName('closeAna')[0];
+    var closeAdvBtn = document.getElementsByClassName('closeAdv')[0];
+    
+    modalBtn.addEventListener('click', openteachModal);  
+    devModBtn.addEventListener('click',opendevModal);
+    anlBtn.addEventListener('click',openAnlMod);
+    advBtn.addEventListener('click',openAdvMod);
+    
+        
+    closeBtn.addEventListener('click', closeModal);
+    closeDevBtn.addEventListener('click',closedevMod);
+    closeAnlBtn.addEventListener('click',closeAnlMod);
+    closeAdvBtn.addEventListener('click',closeAdvMod);
+    
+    modal.addEventListener('click',openteachModal);
+    devMod.addEventListener('click',opendevModal);
+    anlMod.addEventListener('click',openAnlMod);
+    advMod.addEventListener('click',openAdvMod);
+    //outside click
+    window.addEventListener('click',clickoutside);
+    
+    function openteachModal()
+        {
+            modal.style.display='block';
+        }
+     
+      function opendevModal()
+        {
+            devMod.style.display='block';
+        }
+     function openAnlMod()
+        {
+            anlMod.style.display='block';
+        }   
+    function openAdvMod()
+        {
+            advMod.style.display='block';
+        }        
+        
+    function closeModal()
+        {
+            modal.style.display='none';
+        }
+  function closedevMod()
+        {
+            devMod.style.display='none';
+        }
+    function closeAnlMod()
+        {
+            anlMod.style.display='none';
+        }
+    function closeAdvMod()
+        {
+            advMod.style.display='none';
+        }
+        
+    function clickoutside(e)
+        {
+            if(e.target == modal)
+            {
+                modal.style.display='none';
+            }
+            else if(e.target== devMod)
+            {
+                devMod.style.display='none';
+            }
+            else if (e.target == anlMod)
+            {
+                anlMod.style.display='none';    
+            }
+            else if(e.target==advMod)
+            {
+                advMod.style.display='none';
+            }
+        }
+    </script>    
+</body>
+
+</html>

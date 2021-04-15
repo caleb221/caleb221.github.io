@@ -1,0 +1,502 @@
+<! DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" lang="zh-Hans">
+<style>
+    
+#topPic
+    {
+       
+        height: 150px;
+        width: 100%;
+        background: grey; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, dimgrey , black); 
+    }
+    
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+background-image: url(black.jpg);
+   background-color:black;/*29292B;*/
+    background-position: 0px 175px;
+}
+
+.topnav {
+  overflow: hidden;
+background: linear-gradient(to right, dimgrey , black); 
+    
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #15c4be;/*#4CAF50;*/
+  color: black;
+}
+    
+    
+.introPic
+    {
+        height: 300px;
+        width: 220px;
+        border-radius: 80px;
+        
+          opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+    
+}
+    .container
+    {
+        position:absolute;
+        width: 10%;
+    }
+    
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  color: lightcyan;
+  font-size: 14px;
+    margin-left: 45px;
+  padding: 10px 30px;
+border-radius: 8px;
+}
+    
+    
+    
+.mainIntro{
+    
+    
+    width: 500px;
+   /* border: 25px solid yellow; */
+    padding: 0px;
+    margin: 25px;
+    
+    padding-left: 30%; 
+    color: aquamarine;
+    font-size: 17px;
+    font: monospace-regular;
+     background-clip: content-box;
+    }
+    
+
+    .button
+    {
+        background: #18baa9;
+        padding: 1em 2em;
+        color: black;
+        border: 0; 
+        width: 300px;
+        height: 40px;
+        margin: 8px;
+        border-radius: 10px;
+       font-size: 18px;
+    }
+    
+    
+.button:hover
+    {
+        background: #333;
+        color: antiquewhite;
+    }
+    .modal
+    {
+        display: none; 
+        /* dark area around the text*/
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0,.25);
+    }    
+    
+    .modalContent
+    {
+        background-color: #f4f4f4;
+        margin: 20% auto;
+        margin-left: 57%;
+        padding: 20px;
+        width:30%;
+        box-shadow: 0 5px 0 rgba(0,0,0,0.8),0 7px 20px 0
+            rgba(0,0,0,0.8);
+    }
+        
+    .devStyle
+    {
+        background-color: black;
+        font-family: monospace;
+        color: antiquewhite;
+        font-size: 13px;
+    }
+    
+    .analystStyle
+    {
+        margin-top: 15%;
+        background-color:black;
+        color: #99DAE8;
+        width: 38%;
+        
+    }
+    .travStyle
+    {
+        margin-top: 12%;
+        background: green;
+        color: beige;
+        width: 38%;
+    }
+    
+    .closeBtn
+    {
+        color: #ccc;
+        float: right;
+        font-size: 30px;
+        
+    }
+    .closeBtn:hover,.closeBtn:focus
+    {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;  
+    } 
+    
+    .closeDev
+    {
+        color: #ccc;
+        float: right;
+        font-size: 30px;
+    }
+    .closeDev:hover,.closeDev:focus
+    {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+    .closeAdv
+    {
+        color: #ccc;
+        float: right;
+        font-size: 30px;
+    }
+    .closeAdv:hover,.closeAdv:focus
+    {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+        .closeAna
+    {
+        color: #ccc;
+        float: right;
+        font-size: 30px;
+    }
+    .closeAna:hover,.closeAna:focus
+    {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+    
+    
+/* 
+ok, so lets make a website, my students did it, now i can too
+personal CV/ code portfolio
+caleb seifert
+*/
+</style>
+    <title>caleb Seifert的主頁!</title>
+</head>
+
+<body>
+
+    <div id="topPic" >
+     <img src="titleScreen.png" alt="some code, no picture though X(" height="150" width="60%">
+    </div>
+    
+    <!-- /var/usr/www/html/ for server !-->
+    
+<div class="topnav">
+  <a class="active" href="indexChinese.html">主頁</a>
+  <a href="Downloads_pageChinese.html">文件</a>
+  <a href="contact_pageChinese.html">聯繫</a>
+    <div style = "float: right">
+    <a href="index.html"> English/中文</a>
+    </div>
+</div>
+
+
+<div style="padding-left: 10%">
+    <br>
+    <div class = "container">
+    <img src="introPic.jpg" alt="its me!" class = "introPic" >
+        <div class="middle">
+            <div class="text">
+            哈尔滨冰節，很好玩啊
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="mainIntro" >
+    <p class="mainText">
+    你好！
+    <br>
+    我的名字叫 Caleb Seifert, 我是
+    <br>
+    <button id="teachModB" class="button">老师</button>     
+    <br>
+    <button id="devModB" class="button">电脑科学家</button> 
+    <br>
+    <button id="analModB" class="button">分析人士</button> 
+    <br>
+    <button id="adventModB" class="button">冒險家</button> 
+     
+        
+        
+        
+        
+        
+        <!--
+    I have many different interests ranging from server side development .
+    <br>
+    Main development Languages:
+        Java, Arduino, HTML, C, C++, C#, Python, SQL
+    <br>
+                                         see resume for complete list!
+    <br>
+    <br>
+    Enough about coding!<br><br>
+    I have many interests including travelling, music, food, physics, consciousness, and large data processing
+    <br>
+    I've also taught a few Robotics classes, which included 3D Design and fabrication!
+    
+    !-->
+</p>
+</div>
+
+<div id="teachMod" class="modal">
+        <div class="modalContent">
+            <span class="closeBtn">&times;</span>
+           
+            <img src="blurbPics/tech1.png" alt ="a picture"
+                 style="width: 75px; height: 75px; float: left; padding-top: 20%;">
+            <p style="padding-left: 25%;">    
+                以前我在教過 St. Paul American 高中学<br>
+                在上海兩年了.
+             <br>
+                我教的課程與計算機科學和技術有關。
+                <br>
+                我從學生那裡學到的東西和我教過的幾乎一樣多。
+                <br>
+看到我的學生創建代碼並實現數據結構
+                <br>
+ 我生命中最偉大的成就之一。
+            </p>
+        </div>
+    </div>
+    
+<div id="devMod" class="modal" >
+        <div class="modalContent devStyle">
+            <span class="closeDev">&times;</span>
+            
+            <img src="blurbPics/Electronic%20Circuit%20Green%20Black%20Android%20Wallpaper.jpg" alt="cool techy picture i found"
+                 style="width: 25%;height: 28%; float: left; padding-right: 5px;">
+            <p> 
+            我主修應用物理，輔修計算機科學。
+            <br>
+            我開始在西南研究所工作
+            <br> 
+            在這裡，我學會瞭如何編程
+            <br>
+            我接著教授計算機科學和機器人學的多個高中課程。
+            <br>
+            我作為程序員的發展來自現實世界的經驗，點擊
+            <br>
+            試驗和錯誤，來自我認識的一些最聰明的人的幫助，課程，點擊
+                <br>
+            還有一定數量的咖啡。
+            </p>
+        </div>
+    </div>
+<div id="analMod" class="modal">
+        <div class="modalContent analystStyle">
+            <span class="closeAna">&times;</span>
+            <p> 
+                
+            我在大學一年級的時候就開始在西南研究所工作。
+            <br>
+            點擊
+            這是我作為分析師的培訓開始的地方。
+            <br>
+            我在學習的同時學到了什麼
+                <span title="Lunar Reconaissance Orbiter, Lyman Alpha Mapping Project" style="color: aqua;">LRO/LAMP</span> 球隊
+            <br>
+            我的主要指示是照顧LAMP的成像光譜儀儀器校準。        
+            <br>
+            我也有机会开发服务器端代码
+            <br>
+            具有未知原因的特殊數據功能。
+            <br>
+            </p>
+            <img src="blurbPics/gear__sickle__and_pen_by_bullmoose1912-d62g1ts.png"
+                 alt ="some design i made awhile back"
+                 style="width: 100px;height: 100px;">
+        </div>
+    </div>
+    <div id="advMod" class="modal">
+        <div class="modalContent travStyle">
+            <span class="closeAdv">&times;</span>
+            <img src="blurbPics/PixelArt.png" alt="something adventerous.png"
+                 style="width: 300px; height: 100px; ">
+            <p>
+            变化是唯一不变的。
+            <br>
+            这是我所相信的，它适用于我生活的方方面面。
+            <br>
+            我相信变化是直接适用于旅行的东西。
+            <br>
+            
+            世界各地的文化激励我以不同的方式看待事物
+           <br>
+            而且创新。
+            <br>
+            我在中国生活了两年<span title="as of making this website" style="color:blanchedalmond;">Two years</span>
+            <br>
+            到目前为止，这是我生命中最美好的经历。
+            <br>
+            来自不同的食物，不同的生活方式，社会规范和文化
+            <br>
+            总的来说，我发现我们都是独一无二的。
+            <br>
+            我认为我们应该庆祝这些差异，以及我们的差异
+            <br>
+            共同点，我发现通常我们比我们想象的更多。
+            <br>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+
+    var modal = document.getElementById('teachMod');
+    var devMod = document.getElementById('devMod');
+    var anlMod = document.getElementById('analMod');
+    var advMod = document.getElementById('advMod');
+        
+    var modalBtn = document.getElementById('teachModB');
+    var devModBtn = document.getElementById('devModB');
+    var anlBtn = document.getElementById('analModB');
+    var advBtn = document.getElementById('adventModB');
+        
+    var closeBtn = document.getElementsByClassName('closeBtn')[0];
+    var closeDevBtn = document.getElementsByClassName('closeDev')[0];
+    var closeAnlBtn = document.getElementsByClassName('closeAna')[0];
+    var closeAdvBtn = document.getElementsByClassName('closeAdv')[0];
+    
+    modalBtn.addEventListener('click', openteachModal);  
+    devModBtn.addEventListener('click',opendevModal);
+    anlBtn.addEventListener('click',openAnlMod);
+    advBtn.addEventListener('click',openAdvMod);
+    
+    closeBtn.addEventListener('click', closeModal);
+    closeDevBtn.addEventListener('click',closedevMod);
+    closeAnlBtn.addEventListener('click',closeAnlMod);
+    closeAdvBtn.addEventListener('click',closeAdvMod);
+    
+    modal.addEventListener('click',openteachModal);
+    devMod.addEventListener('click',opendevModal);
+    anlMod.addEventListener('click',openAnlMod);
+    advMod.addEventListener('click',openAdvMod);
+    //outside click
+    window.addEventListener('click',clickoutside);
+    
+    function openteachModal()
+        {
+            modal.style.display='block';
+        }
+     
+      function opendevModal()
+        {
+            devMod.style.display='block';
+        }
+     function openAnlMod()
+        {
+            anlMod.style.display='block';
+        }   
+    function openAdvMod()
+        {
+            advMod.style.display='block';
+        }        
+        
+    function closeModal()
+        {
+            modal.style.display='none';
+        }
+  function closedevMod()
+        {
+            devMod.style.display='none';
+        }
+    function closeAnlMod()
+        {
+            anlMod.style.display='none';
+        }
+    function closeAdvMod()
+        {
+            advMod.style.display='none';
+        }
+        
+    function clickoutside(e)
+        {
+            if(e.target == modal)
+            {
+                modal.style.display='none';
+            }
+            else if(e.target== devMod)
+            {
+                devMod.style.display='none';
+            }
+            else if (e.target == anlMod)
+            {
+                anlMod.style.display='none';    
+            }
+            else if(e.target==advMod)
+            {
+                advMod.style.display='none';
+            }
+        }
+    </script>    
+</body>
+
+</html>
