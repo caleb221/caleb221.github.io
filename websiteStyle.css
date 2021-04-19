@@ -222,3 +222,10 @@ border-radius: 8px;
         text-decoration: none;
         cursor: pointer;
     }
+
+h1{
+font-family:monospace;
+color:lightcyan;
+size:25px;
+
+}
