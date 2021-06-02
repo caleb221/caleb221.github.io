@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    
+    
+<head>
+    
+    
+    <link rel="stylesheet" href="terminalStyle.css">
+    <title>myTerminal</title>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+            <li>
+            <a href="/terminalProjects.html" >>Projects </a>
+            </li>
+            <li>
+            <a href="/terminalEducation.html">>Education/Experience  </a>
+            </li>
+            <li>
+            <a href="index.html">> /..</a>
+            </li>
+            </ul>
+        </nav>
+   
+    <main>
+    <h1>Projects:$<span class="cursor">|</span></h1>
+        <h3>A quick look at a few</h3>
+        
+        <p>More details can be found on my <a href="https://github.com/caleb221/" target="_new">gitHub</a> </p>
+        
+     
+        <ul>            
+            <li id="espLEAFnav">/Micro controller AI</li>
+            <li id="droidNav">/Astromech Droid</li>
+            <li id="turbineNav">/Wind Turbine</li>
+            <li id="miscNav">/Misc</li>
+        </ul>
+    </main>
+    
+        
+    </div>
+      
+  
+  
+
+ 
+ 
+
+  
+<div class="hidden">
+    
+    <div id="espLeaf-content">
+        <h2>/Thesis-Project:$<span class="cursor">|</span></h2>
+      <img src="https://raw.githubusercontent.com/caleb221/MTCNN-Leaf/master/onet.jpg"  alt="MTCNN rework" class="projectImg">
+        <h3><a href="https://github.com/caleb221/ESP32-Leaf" target="_new">Details</a></h3>
+    <p>
+    The goal was to re-purpose the MTCNN Facial detection model and use it on an ESP-32 AI-Thinker WiFi Camera module.
+    </p>
+    
+    <p>
+        This project was the basis of my Thesis, which I will happily send upon request. A warning though, it is 50 pages long. 
+    </p>
+        
+    <p>
+        
+    the process in its simplest form goes like this:
+<br>1. pick a small-ish model ( I would probably suggest some version of mobilenets or mobilenetsV2) but ESP-Leaf is MTCNN
+more on this model (and how it pertains to ESP-Leaf) is found here: <a href="https://github.com/caleb221/MTCNN-Leaf">MTCNN-Leaf</a>
+train the model however you like ( I used caffe but the process is framework independent, you just need to know the data layout)
+<br>2. extract the model's weights and save them into a usable format (text, in the caffe example it gave me a numpy array which was nice)
+<br>3. transform the models weights into the ESP-Face library layout (see translateWeights2ESP_lib.py)
+  **SETUP FOR CAFFE, just do a quick check what your framework uses and transpose accordingly.
+This also creates a C header file that you'll use for inference, as a necessary feature you can cut the weights up into however many sections you need. (that was a bad explanation, what i mean is you won't have enough memory to load all your weights in at once, so separate functions are created to call upon the weights that you want to load at a given point, this is best illustrated in the R-Net section of the ESP-Leaf)
+<br>4. Finally! all that preparation work is done...now to implement your chosen model onto the ESP-32. Put all the generated C Header files into your project folder so you can use them in your code. Implement your chosen model as you see fit in C, and always test for heap failures.
+<br>some extra notes:
+ check the closed issues section of ESP-Face for conversations of problems (i closed them but they might be useful)
+ split convolutions where you need or your model won't fit
+ make sure the raw text weights and the libraries your'e using all fit onto the ESP ( for O-Net the weights  would compile and upload just fine but the program would never start)
+use heap tracing    
+    </p>
+    
+    </div>
+    
+    <div id="droid-content">
+        <h2>/Robotics:$<span class="cursor">|</span></h2>
+      <img src="https://raw.githubusercontent.com/caleb221/R4-04-Astromech/main/droidImg/standingLookAtMe.jpg" class="projectImg"  >
+        <h3><a href="https://github.com/caleb221/R4-04-Astromech" target="_new">Details</a></h3>
+        
+        <p>
+        Designed with the R4 Astromech droid in mind, but getting lost along the way resulted in R4-04, the droid for a galaxy not so far away.<br>
+This droid hosts its own WiFi network, and anyone in reach can accesss a web server holding a livestream of the IP camera and controls for the droid.<br>
+The IP of the droid's control server is printed on the bright blue LCD screen.<br>
+The droid is controlled using websocket communication on the ESP32 and relays information from the user to an Arduino Mega controlling the motors via I2C commands. The Arduino also handles a self balancing routine, adjusting its shoulders with PID so that rougher terrain won't be a problem.<br>
+Along with the motor control, R4-04 also shows information concerning its environment on a second screen. The information is obtained via a BME280 Sensor.
+        
+        </p>
+        
+    </div>
+    
+    <div id="windTurbine-content">
+    <h2>/GreenEnergy:$<span class="cursor">|</span></h2>    
+    <img src="https://raw.githubusercontent.com/caleb221/CeilingFan-WindTurbine/main/windTurbineImg/VAWT_complete1.jpg" class="projectImg"  >
+    <h3><a href="https://github.com/caleb221/CeilingFan-WindTurbine" target="_new">Details</a></h3>
+    <p>
+        I had come into posession of a trashed ceiling fan, what to do??<br>
+        Of course, turn it into a wind turbine!<br>
+        Here is the result of not having a welder and transforming a solar panel control into a Wind Turbine control.
+    </p>
+        
+    </div>
+    <div id="misc-content">
+        
+       <h2>/Smart Farming:$<span class="cursor">|</span></h2>    
+       <img src="https://raw.githubusercontent.com/caleb221/Smart_Farm/master/img/pcc_smartFarm.png"  class="projectImg" id = "needsBkg">
+       <h3><a href="https://github.com/caleb221/smart_farm" target="_new">Details</a></h3>
+        
+        <p>
+        This is a smart farming implementation I made for a small scale farm in Texas.
+        <br>
+        The system is implemented using a server, database, various data loggers, and water control through multiple communication methods.
+        </p>
+        
+        
+        <br>
+        <br>
+        <h2>/RadioJSON:$<span class="cursor">|</span></h2>   
+        <img src="https://raw.githubusercontent.com/caleb221/NanoPlane/master/NanoPlane_images/webwx312112getmsgimg.jpg" class="projectImg">
+        <h3><a href="https://github.com/caleb221/nanoPlane" target="_new">Details</a></h3>
+        <p>
+        A fixed wing drone using only an Arduino nano!<br>
+        This is a custom implementation of an arduino nano as a flight controller along with a custom built transmitter.<br>
+        I wanted to build a fixed wing drone using some spare parts I had laying around and this is the result! After a lot of testing and soldering, this is the result.
+        </p>
+        
+        
+        
+    </div>
+    
+    
+    
+    </div>
+    
+    <script src="winBbx.bundle.js"></script>
+    <script src="terminalFunctions.js"></script>
+
+    </body>
+</html
