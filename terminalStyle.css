@@ -100,3 +100,15 @@ height: 200px;
 border-radius: 10px;    
 }
 #needsBkg{background-color: #ccc;}
+
+
+ @media screen and (max-width: 1020px) {
+  
+    * {
+        font-size: 30px;
+      }
+   ul {
+        padding-top: 20px;
+        padding-bottom: 30px;  
+     }
+}
