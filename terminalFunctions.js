@@ -14,17 +14,10 @@ const stackNav = document.querySelector("#stackNav");
 const mastersNav = document.querySelector("#mastersNav");
 const collegeNav = document.querySelector("#collegeNav");
 
-
-var w = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
-
-var h = window.innerHeight
-|| document.documentElement.clientHeight
-|| document.body.clientHeight;
-
+//Mobile version uses modals
+var w =screen.width
 var isMobile = false;
-if(h <1024 && w<1024)
+if( w<=1020)
 {
  isMobile=true;
 }
