@@ -105,10 +105,10 @@ border-radius: 10px;
  @media screen and (max-width: 1020px) {
   
     * {
-        font-size: 30px;
+        font-size: 35px;
       }
    ul {
-        padding-top: 20px;
+        padding-top: 25px;
         padding-bottom: 30px;  
      }
 }
