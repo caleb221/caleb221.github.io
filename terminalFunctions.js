@@ -1,12 +1,8 @@
-
 const teacherNav = document.querySelector("#teacherNav");
 const devNav = document.querySelector("#devNav");
 const analyNav = document.querySelector("#analystNav");
 const adventureNav = document.querySelector("#adventureNav");
 const contactNav = document.querySelector("#contactNav");
-
-
-
 
 const espnav = document.querySelector("#espLEAFnav");
 const droidnav = document.querySelector("#droidNav");
@@ -18,27 +14,28 @@ const stackNav = document.querySelector("#stackNav");
 const mastersNav = document.querySelector("#mastersNav");
 const collegeNav = document.querySelector("#collegeNav");
 
+
+var w = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var h = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+var isMobile = false;
+if(h <1024 && w<1024)
+{
+ isMobile=true;
+}
+
 if(teacherNav!=null){
 
-teacherNav.addEventListener('click',()=>{
-           newBox("Teaching","#teacher-content","400px","400px");                       
-});
-
-devNav.addEventListener('click',()=>{
-            newBox("Development","#dev-content","400px","400px");                        
-});
-
-analyNav.addEventListener('click',()=>{
-    newBox("Analysis","#analyst-content","400px","400px");
-});
-adventureNav.addEventListener('click',()=>{
-    newBox("Adventure","#adventure-content","400px","400px");
-});
-    
-    
-    
-    contactNav.addEventListener('click',()=>{
-    newBox("Adventure","#contact-content","400px","400px");
+teacherNav.addEventListener('click',()=>{newBox("Teaching","#teacher-content","400px","400px");});
+devNav.addEventListener('click',()=>{newBox("Development","#dev-content","400px","400px");});
+analyNav.addEventListener('click',()=>{newBox("Analysis","#analyst-content","400px","400px");});
+adventureNav.addEventListener('click',()=>{newBox("Adventure","#adventure-content","400px","400px");});
+contactNav.addEventListener('click',()=>{newBox("Contact","#contact-content","400px","400px");
 });
 }
 else if(espnav!=null)
@@ -69,6 +66,7 @@ function newBox(title,thisId,thisWidth,thisHeight)
             background:"#00aa00",
             width:thisWidth,
             height:thisHeight,
+            modal:isMobile,
          /* top:150,
             right:50,
             bottom:50,
@@ -79,5 +77,3 @@ function newBox(title,thisId,thisWidth,thisHeight)
             onblur:function(){this.setBackground('#777')}
     }) 
 }
-
-
