@@ -33,7 +33,7 @@ if(teacherNav!=null){
     if(isMobile)
         {
             boxWidth="700px";
-            boxHeight="600px";
+            boxHeight="800px";
         }
 
 teacherNav.addEventListener('click',()=>{newBox("Teaching","#teacher-content",boxWidth,boxHeight);});
@@ -50,7 +50,7 @@ else if(espnav!=null)
     if(isMobile)
         {
             boxWidth="700px";
-            boxHeight="600px";
+            boxHeight="800px";
         }   
  espnav.addEventListener('click',()=>{newBox("ESP32-Leaf","#espLeaf-content",boxWidth,boxHeight);});
  droidnav.addEventListener('click',()=>{newBox("R4-04","#droid-content",boxWidth,boxHeight);});
@@ -63,8 +63,8 @@ else if(expNav!=null)
     var boxHeight="400px";
     if(isMobile)
         {
-            boxWidth="600px";
-            boxHeight="600px";
+            boxWidth="700px";
+            boxHeight="800px";
         } 
     
     expNav.addEventListener('click',()=>{newBox("Experience","#experience-content","600px","500px");});
