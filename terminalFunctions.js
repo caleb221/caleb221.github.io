@@ -44,9 +44,9 @@ adventureNav.addEventListener('click',()=>{
 else if(espnav!=null)
 {   
 espnav.addEventListener('click',()=>{newBox("ESP32-Leaf","#espLeaf-content","500px","500px");});
- droidnav.addEventListener('click',()=>{newBox("ESP32-Leaf","#droid-content","500px","500px");});
- turbinenav.addEventListener('click',()=>{newBox("ESP32-Leaf","#windTurbine-content","500px","500px");}); 
- miscProjectnav.addEventListener('click',()=>{newBox("ESP32-Leaf","#misc-content","500px","500px");}); 
+ droidnav.addEventListener('click',()=>{newBox("R4-04","#droid-content","500px","500px");});
+ turbinenav.addEventListener('click',()=>{newBox("Wind Turbine","#windTurbine-content","500px","500px");}); 
+ miscProjectnav.addEventListener('click',()=>{newBox("Other projects","#misc-content","500px","500px");}); 
 }
 else if(expNav!=null)
 {
