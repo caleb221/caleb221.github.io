@@ -117,6 +117,25 @@ border-radius: 10px;
     padding-left: 2%;
 }
      
+
+.blink1{
+    animation: 1s blinkNav step-end infinite;
+}
+.blink2{
+    animation: 2s blinkNav step-end infinite;
+}
+.blink3{
+    animation: 3s blinkNav step-end infinite;
+}
+@keyframes blinkNav
+{
+    from, to{
+        color: #ccc;
+    }
+    50%{
+        color: var(--text-color);
+    }
+}
      
      
 }
