@@ -9,9 +9,7 @@ const contactNav = document.querySelector("#contactNav");
 const espnav = document.querySelector("#espLEAFnav");
 const droidnav = document.querySelector("#droidNav");
 const turbinenav = document.querySelector("#turbineNav");
-const wearableNav = document.querySelector("#watchNav);
-
-
+const wearableNav = document.querySelector("#watchNav");
 const miscProjectnav = document.querySelector("#miscNav");
 
 const expNav = document.querySelector("#experienceNav");
