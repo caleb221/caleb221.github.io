@@ -9,6 +9,9 @@ const contactNav = document.querySelector("#contactNav");
 const espnav = document.querySelector("#espLEAFnav");
 const droidnav = document.querySelector("#droidNav");
 const turbinenav = document.querySelector("#turbineNav");
+const wearableNav = document.querySelector("#watchNav);
+
+
 const miscProjectnav = document.querySelector("#miscNav");
 
 const expNav = document.querySelector("#experienceNav");
@@ -54,7 +57,8 @@ else if(espnav!=null)
         }   
  espnav.addEventListener('click',()=>{newBox("ESP32-Leaf","#espLeaf-content",boxWidth,boxHeight);});
  droidnav.addEventListener('click',()=>{newBox("R4-04","#droid-content",boxWidth,boxHeight);});
- turbinenav.addEventListener('click',()=>{newBox("Wind Turbine","#windTurbine-content",boxWidth,boxHeight);}); 
+ turbinenav.addEventListener('click',()=>{newBox("Wind Turbine","#windTurbine-content",boxWidth,boxHeight);});
+ wearableNav.addEventListener('click',()=>{newBox("Wearables","#watch-content",boxWidth,boxHeight);});
  miscProjectnav.addEventListener('click',()=>{newBox("Other projects","#misc-content",boxWidth,boxHeight);}); 
 }
 else if(expNav!=null)
