@@ -11,6 +11,8 @@ const droidnav = document.querySelector("#droidNav");
 const turbinenav = document.querySelector("#turbineNav");
 const wearableNav = document.querySelector("#watchNav");
 const miscProjectnav = document.querySelector("#miscNav");
+const cncProjNav = document.querySelector("#cncNav");
+
 
 const expNav = document.querySelector("#experienceNav");
 const stackNav = document.querySelector("#stackNav");
@@ -57,7 +59,8 @@ else if(espnav!=null)
  droidnav.addEventListener('click',()=>{newBox("R4-04","#droid-content",boxWidth,boxHeight);});
  turbinenav.addEventListener('click',()=>{newBox("Wind Turbine","#windTurbine-content",boxWidth,boxHeight);});
  wearableNav.addEventListener('click',()=>{newBox("Wearables","#watch-content",boxWidth,boxHeight);});
- miscProjectnav.addEventListener('click',()=>{newBox("Other projects","#misc-content",boxWidth,boxHeight);}); 
+ miscProjectnav.addEventListener('click',()=>{newBox("Other projects","#misc-content",boxWidth,boxHeight);});    
+ cncProjNav.addEventListener('click',()=>{newBox("CAD/CNC projects","#misc-content",boxWidth,boxHeight);}); 
 }
 else if(expNav!=null)
 {
