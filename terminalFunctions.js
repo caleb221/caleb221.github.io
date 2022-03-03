@@ -60,7 +60,7 @@ else if(espnav!=null)
  turbinenav.addEventListener('click',()=>{newBox("Wind Turbine","#windTurbine-content",boxWidth,boxHeight);});
  wearableNav.addEventListener('click',()=>{newBox("Wearables","#watch-content",boxWidth,boxHeight);});
  miscProjectnav.addEventListener('click',()=>{newBox("Other projects","#misc-content",boxWidth,boxHeight);});    
- cncProjNav.addEventListener('click',()=>{newBox("CAD/CNC projects","#cnc_projects-content",boxWidth,boxHeight);}); 
+ cncProjNav.addEventListener('click',()=>{newBox("CAD/CNC projects","#cnc_project-content",boxWidth,boxHeight);}); 
 }
 else if(expNav!=null)
 {
